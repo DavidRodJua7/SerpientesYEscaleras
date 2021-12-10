@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Juego.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Gloria+Hallelujah&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+    <script src="Juego.js"> </script>
+    <title>Juego</title>
+    <!-- ESTILO QUE DA A LOS NUMEROS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Gloria+Hallelujah&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div id="ganador" style="display: none;">
+    </div>
+    <div id="fiesta" style="display: none;">
+        <div id="confetis">
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+            <div class="confeti"></div>
+        </div>
+    </div>
+    <audio id="audio" loop>
+        <source src="audio/cancion1.mp3" type="audio/mp3">
+    </audio>
+    <div class="grid">
+        <div id="fichas">
+            <div class="ficha" id="ficha1" style="display: inline;">1</div>
+            <div class="ficha" id="ficha2" style="display: inline;">2</div>
+            <div class="ficha" id="ficha3" style="display: inline;">3</div>
+            <div class="ficha" id="ficha4" style="display: inline;">4</div>
+        </div>
+        <div id="tablero"></div>
+        <div id="cajita">
+            <div class="ajustes">
+                <button class="botonAjustes"></button>
+                <div id="crearClase" class="lista">
+                    <div class="boton" id=" botones" onclick="quitarSonido()"><img
+                            src="./Imagenes/MenuDesplegable/Play2.png" width="50px" height="50px" /></div>
+                    <div class="boton" onclick="exit()"><img src="./Imagenes/MenuDesplegable/Casa2.png" width="50px"
+                            height="50px" /></div>
+                    <div class="boton" onclick="reiniciar()"><img src="./Imagenes/MenuDesplegable/Reiniciar2.png"
+                            width="50px" height="50px" /></div>
+                </div>
+            </div>
+            <div id="turno">Turno de... </div>
+            <div class="dado" id="dado">
+                <img src="Imagenes/Dado1.png" id="fotoDado" width="150px" height="150px" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

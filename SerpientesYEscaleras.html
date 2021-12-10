@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Serpientes y escaleras</title>
+    <link rel="stylesheet" href="SerpientesYEscaleras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Gloria+Hallelujah&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+
+    <script>
+        window.addEventListener("load", iniciar);
+        function iniciar() {
+            document.getElementById("play").addEventListener("click", pagina);
+        }
+        function pagina() {
+            window.open("Principal.html", "_self");
+        }
+    </script>
+</head>
+<body>
+    <div class="grid">
+        <h1><span>S</span><span>N</span><span>A</span><span>K</span><span>E</span><span>S</span>
+            <span> </span><span>&</span>
+            <span>S</span><span>L</span><span>A</span><span>D</span><span>E</span><span>R</span><span>S</span>
+        </h1>
+        <div class="imagen">
+            <div id="logo"></div>
+        </div>
+        <div class="cajaplay">
+            <button class="play" id="play" value="play">Let´s Play</button>
+        </div>
+    </div>
+    <div class="fondo">
+        <ul class="circulos">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
